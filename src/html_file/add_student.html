@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../../res/add_student.css">
+</head>
+
+<body>
+
+    <a href="../../index.html"><button id="out">나가기</button></a>
+    <div id="add_student_container">
+
+        <div>
+            <div>
+                <span>이름: </span><input oninput="onInput()" type="text" id="name" placeholder="이름">
+            </div>
+            <div>
+                <span>번호: </span><input oninput="onInput()" type="number" id="number" placeholder="번호">
+            </div>
+            <div>
+                <span>성별: </span>
+                <div>
+                    <input type="radio" id="option1" name="option" value="option1" checked>
+                    <label for="option1">남</label>
+                    <input type="radio" id="option2" name="option" value="option2">
+                    <label for="option2">여</label>
+                </div>
+            </div>
+            <button id="addStudentButton" onclick="addStudent()"></button>
+        </div>
+
+    </div>
+    <script src="../javascript_file/studentManagement.js"></script>
+</body>
+
+</html>
